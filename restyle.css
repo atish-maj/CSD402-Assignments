@@ -1,0 +1,24 @@
+#name {
+	text-align: left;
+	color:black;
+	font-size:1.4em;
+}
+
+.header {
+	background-color: #257bbf;
+	color:antiquewhite;
+	font-size:1.5em;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+
+body{
+	margin:auto;
+	max-width:50vw;
+}
