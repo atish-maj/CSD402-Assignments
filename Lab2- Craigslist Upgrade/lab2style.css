@@ -1,0 +1,193 @@
+
+.left-side {
+  float: left;
+  width: 24%;
+  height:100 %;
+  position:relative;
+}
+
+sup {
+  font-size: 20%;
+}
+
+button {
+    background-color:#49847E ;
+    color: white;
+    padding: 5px 22px;
+    margin: 1px 5;
+    border: none;
+    cursor: pointer;
+}
+
+
+#little-logo {
+    font-size: 30px;
+    line-height:60px;
+    color: #551A8B;
+    text-align: left;
+    font-family: "Times New Roman",Times,serif;
+    font-weight: 500;
+    font-stretch: expanded;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+#left-panel {
+  margin-top: 30px;
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    border-collapse: collapse;
+    display: inline-block;
+    border: double;
+    border-top: none;
+    background-color: lightblue;
+}
+
+#center-panel {
+    width: 60%;
+    height: 100%;
+    float: right;
+    background-color: white;
+    border-collapse: collapse;
+    display: inline-block;
+    border: none;
+}
+
+#right-panel {
+  margin-top: 30px;
+  width: 20%;
+  height: 100%;
+  float: right;
+  background-color: white;
+    border-collapse: collapse;
+    display: inline-block;
+    border: double;
+    border-top: none;
+    background-color: lightblue;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+body, html {
+  height: 100%;
+}
+
+.dropbtn{
+  width:20em;
+}
+
+.ds {
+  color:blue;
+  text-align: center;
+  padding-left: 30px;
+}
+
+#cityname {
+  font-family: Garamond;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  margin-left:10px;
+  margin-right:10px;
+  background-color: white;
+}
+
+.right-panel-align {
+  text-align: center;
+  padding-left: 15px;
+  color:darkblue;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#community {
+  font-size:40px;
+  border-radius:12px;
+  margin-top: 0.5em;
+  margin-left: 1.25em;
+  background-color: #0C87B0;
+}
+
+#housing {
+  font-size:40px;
+  border-radius:12px;
+  margin-top: 0.5em;
+  margin-left: 1.25em;
+  background-color: #0C87B0;
+}
+
+#jobs {
+  font-size:40px;
+  border-radius:12px;
+  margin-top: 0.5em;
+  margin-left: 1.25em;
+  background-color: #0C87B0;
+}
+
+#forsale {
+  font-size:40px;
+  border-radius:12px;
+  margin-top: 0.5em;
+  margin-left: 1.25em;
+  background-color: #0C87B0;
+}
+
+#discuss {
+  font-size:40px;
+  border-radius:12px;
+  margin-top: 0.5em;
+  margin-left: 1.25em;
+  background-color: #0C87B0;
+}
+
+#services {
+  font-size:40px;
+  border-radius:12px;
+  margin-top: 0.5em;
+  margin-left: 1.25em;
+  background-color: #0C87B0;
+}
+

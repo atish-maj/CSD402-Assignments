@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Javascript Exercise</title>
+</head>
+<body>
+	
+
+	<img id="img1" class="img-bg" src="http://images.clipartpanda.com/circle-clip-art-red-circle-md.png" />
+	<img id="img2" class="img-bg" src="http://texample.net/media/tikz/examples/PNG/rgb-triangle.png"/>
+	<img id="img3" class ="img-bg" src="https://maxwelldemon.files.wordpress.com/2012/03/2x1-rectangle.png"></img>
+	<img id="img4" class ="img-bg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Green_square.svg/1000px-Green_square.svg.png"></img>
+	<img id="img5" class ="img-bg" src="http://www.pngall.com/wp-content/uploads/2016/04/Hexagon-PNG-Clipart.png"></img>
+	
+	<div class="container-div">
+		<input type="button" id="Triangle" value="Triangle" onclick="showImg2();CalculateAreaTriangle();">
+		<input type="button" id="Circle" value="Circle" onclick="showImg1();CalculateAreaCirc();">
+		<input type="button" id="Rectangle" value="Rectangle" onclick="showImg3();CalculateAreaRect();">
+		<input type="button" id="Square" value="Square" onclick="showImg4();CalculateAreaSqr();">
+		<input type="button" id="Hexagon" value="Hexagon" onclick="showImg5();CalculateAreaHex();">
+	</div>
+	 </body>
+<style>
+	.img-bg{
+		z-index: -100;
+		display: none;
+		height: 100%;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+	.container-div{
+		position:absolute;
+		top:0;
+		left:0;
+		display: block;
+		margin: auto auto;
+	}
+	#img2{
+		top:40px;
+		right:30px;
+		height:60%;
+	}
+	#img1{
+		top:40px;
+		right:40px;
+		height:60%;
+	}
+	#img3{
+		height: 60%;
+		width: 60%;
+		left:50px;
+		top:40px;
+
+	}
+	#img4{
+		height:60%;
+		left:50px;
+		top:40px;
+
+	}
+	
+</style>
+    <form id="circleform" name=form1 align="right" style="display: none;">
+        Enter the radius of circle:
+       <input type="text" name="txtRadius" size=10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaCirc();'> 
+       <div id="areamsg"></div>
+       <div id="circumferencemsg"> </div>
+    </form>
+    <form id="triangleform" name=form2 align="right" style="display: none;">
+        Enter the three sides of the triangle :
+       <input type="text" name="side1" size= 10>
+       <input type="text" name="side2" size= 10>
+       <input type="text" name="side3" size= 10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaTriangle();'> 
+       <div id="trimsg"></div>
+       <div id="perimetermsg"> </div>
+    </form>
+    <form id="rectangleform" name=form3 align="right" style="display: none;">
+        Enter the length,breadth of the rectangle : 
+       <input type="text" name="rectlen" size=10>
+       <input type="text" name="rectbrd" size=10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaRect();'> 
+       <div id="rectareamsg"></div>
+       <div id="rectpermsg"> </div>
+    </form>
+    <form id="squareform" name=form4 align="right" style="display: none;">
+        Enter the side of the square : 
+       <input type="text" name="sqrside" size=10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaSqr();'> 
+       <div id="sqrareamsg"></div>
+       <div id="sqrperimetermsg"> </div>
+    </form>
+    <form id="hexform" name=form5 align="right" style="display: none;">
+        Enter the side of the hexagon: 
+       <input type="text" name="hexside" size=10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaHex();'> 
+       <div id="hexareamsg"></div>
+       <div id="hexperimetermsg"> </div>
+    </form> 
+ <script>
+  function CalculateAreaHex(){
+    document.getElementById("rectangleform").style.display="none";  
+    document.getElementById("triangleform").style.display="none";
+    document.getElementById("circleform").style.display="none";
+    document.getElementById("squareform").style.display="none";
+    document.getElementById("hexform").style.display="block";
+       var hside =document.form5.hexside.value;
+         document.getElementById("hexareamsg").innerHTML =("<P>The area of the hexagon is " + (2.59807621 * Math.pow(hside,2) ) + "</p>");
+         document.getElementById("hexperimetermsg").innerHTML =("<P>The perimeter of the hexagon is " + (6 * hside) + "</p>");
+    }
+  function CalculateAreaSqr(){
+    document.getElementById("hexform").style.display="none";
+    document.getElementById("rectangleform").style.display="none";  
+    document.getElementById("triangleform").style.display="none";
+    document.getElementById("circleform").style.display="none";
+    document.getElementById("squareform").style.display="block";
+      var side =document.form4.sqrside.value;
+        document.getElementById("sqrareamsg").innerHTML =("<P>The area of the square is " + (Math.pow(side,2)) + "</p>");
+        document.getElementById("sqrperimetermsg").innerHTML =("<P>The perimeter of the square is " + (4 * side) + "</p>");
+    }
+ 		function CalculateAreaRect(){
+      document.getElementById("hexform").style.display="none";
+		document.getElementById("triangleform").style.display="none";
+		document.getElementById("circleform").style.display="none";
+		document.getElementById("rectangleform").style.display="block";
+    document.getElementById("squareform").style.display="none";
+	      var rectl =document.form3.rectlen.value;
+	      var rectb =document.form3.rectbrd.value;
+        var rectarea = rectl * rectb;
+        var rectperimeter = 2*(+rectl+ +rectb);
+        document.getElementById("rectareamsg").innerHTML =("<P>The area of the rectangle is " + (rectarea)  +"</p>");
+        document.getElementById("rectpermsg").innerHTML =("<P>The perimeter of the rectangle is " + (rectperimeter)  +"</p>");
+    }
+		 function CalculateAreaCirc(){
+      document.getElementById("hexform").style.display="none";
+		document.getElementById("rectangleform").style.display="none"; 	
+		document.getElementById("triangleform").style.display="none";
+		document.getElementById("circleform").style.display="block";
+    document.getElementById("squareform").style.display="none";
+	    var radius =document.form1.txtRadius.value;
+        document.getElementById("areamsg").innerHTML =("<P>The area of the circle is " + (radius * radius * Math.PI) + "</p>");
+        document.getElementById("circumferencemsg").innerHTML =("<P>The circumference of the circle is " + (2 * radius * Math.PI) + "</p>");
+    }
+     function CalculateAreaTriangle(){
+      document.getElementById("hexform").style.display="none";
+     	document.getElementById("rectangleform").style.display="none";
+     	 document.getElementById("circleform").style.display="none";
+		 document.getElementById("triangleform").style.display="block";
+     document.getElementById("squareform").style.display="none";
+	     var a =document.form2.side1.value;
+	     var b =document.form2.side2.value;
+	     var c =document.form2.side3.value;
+	     var perimeter = +a + +b + +c;
+	     var s = (+a + +b + +c )*0.5;
+	     var area = Math.sqrt(s* +(s-a) * +(s-b) * +(s-c));
+         document.getElementById("trimsg").innerHTML =("<P>The area of the triangle is " + (area) + "</p>");
+         document.getElementById("perimetermsg").innerHTML =("<P>The perimeter of the triangle is " + (perimeter) + "</p>");
+     }
+       function showImg1() {
+            document.getElementById("img2").style.display="none";
+            document.getElementById("img3").style.display="none";
+            document.getElementById("img4").style.display="none";
+            document.getElementById("img5").style.display="none";
+            document.getElementById("img1").style.display="block";
+        }
+
+        function showImg2() {
+			document.getElementById("img1").style.display="none";
+            document.getElementById("img2").style.display="block";
+            document.getElementById("img3").style.display="none";
+            document.getElementById("img4").style.display="none";
+            document.getElementById("img5").style.display="none";
+        }
+        function showImg3() {
+        	document.getElementById("img1").style.display="none";
+        	document.getElementById("img2").style.display="none";
+            document.getElementById("img3").style.display="block";
+            document.getElementById("img4").style.display="none";
+            document.getElementById("img5").style.display="none";
+        }
+        function showImg4() {
+            document.getElementById("img2").style.display="none";
+            document.getElementById("img4").style.display="block";
+            document.getElementById("img3").style.display="none";
+            document.getElementById("img1").style.display="none";
+            document.getElementById("img5").style.display="none";
+        }
+        function showImg5() {
+            document.getElementById("img2").style.display="none";
+            document.getElementById("img5").style.display="block";
+            document.getElementById("img3").style.display="none";
+            document.getElementById("img1").style.display="none";
+            document.getElementById("img4").style.display="none";
+        }
+
+    </script>
+</html>
+
+    
