@@ -1,3 +1,30 @@
+.main-head {
+  color: black;
+  font-size: 30px;
+}
+
+#map {
+  width:50em;
+  height:30em;
+  margin-left: auto;
+  margin-right: auto;
+    /*background:yellow*/
+}
+
+#logo {
+    font-size: 55px;
+    line-height:60px;
+    color: #551A8B;
+    text-align: center;
+    font-family: "Times New Roman",Times,serif;
+    font-weight: 500;
+    font-stretch: expanded;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border: 0;
+}
+
 
 .left-side {
   float: left;
@@ -10,15 +37,40 @@ sup {
   font-size: 20%;
 }
 
+.continents{
+margin: 10px auto;
+padding: 10px 10;
+text-align: center;
+
+}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 2px 2px;
+    margin: 8px 5;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.regionbutton {
+  background-color: lightblue;
+  color: white;
+  padding: 5px 22px;
+  margin: 1px 5;
+  border: none;
+  cursor: pointer;
+
+}
+
 button {
-    background-color:#49847E ;
+    background-color: lightblue;
     color: white;
     padding: 5px 22px;
     margin: 1px 5;
     border: none;
     cursor: pointer;
 }
-
 
 #little-logo {
     font-size: 30px;
@@ -51,7 +103,6 @@ button {
     display: inline-block;
     border: double;
     border-top: none;
-    background-color: lightblue;
 }
 
 #center-panel {
@@ -74,7 +125,6 @@ button {
     display: inline-block;
     border: double;
     border-top: none;
-    background-color: lightblue;
   }
 
 .dropdown {
@@ -86,7 +136,7 @@ button {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 300px;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -108,90 +158,13 @@ button {
     background-color: #3e8e41;
 }
 
-body, html {
-  height: 100%;
-}
-
 .dropbtn{
   width:20em;
 }
 
-.ds {
+#ds {
   color:blue;
   text-align: center;
   padding-left: 30px;
 }
 
-#cityname {
-  font-family: Garamond;
-  border-top: solid 1px;
-  border-bottom: solid 1px;
-  margin-left:10px;
-  margin-right:10px;
-  background-color: white;
-}
-
-.right-panel-align {
-  text-align: center;
-  padding-left: 15px;
-  color:darkblue;
-  list-style-type: none;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-<<<<<<< HEAD
-}
-
-#community {
-  font-size:40px;
-  border-radius:12px;
-  margin-top: 0.5em;
-  margin-left: 1.25em;
-  background-color: #0C87B0;
-}
-
-#housing {
-  font-size:40px;
-  border-radius:12px;
-  margin-top: 0.5em;
-  margin-left: 1.25em;
-  background-color: #0C87B0;
-}
-
-#jobs {
-  font-size:40px;
-  border-radius:12px;
-  margin-top: 0.5em;
-  margin-left: 1.25em;
-  background-color: #0C87B0;
-}
-
-#forsale {
-  font-size:40px;
-  border-radius:12px;
-  margin-top: 0.5em;
-  margin-left: 1.25em;
-  background-color: #0C87B0;
-}
-
-#discuss {
-  font-size:40px;
-  border-radius:12px;
-  margin-top: 0.5em;
-  margin-left: 1.25em;
-  background-color: #0C87B0;
-}
-
-#services {
-  font-size:40px;
-  border-radius:12px;
-  margin-top: 0.5em;
-  margin-left: 1.25em;
-  background-color: #0C87B0;
-}
-
-=======
-}
->>>>>>> 91ea8312e212f52db0ed6b4e36a5b326ff4122af
