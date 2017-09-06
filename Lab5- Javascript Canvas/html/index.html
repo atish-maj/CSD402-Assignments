@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<head>
+	<title> Shapes with Canvas</title>
+</head>
+<body>
+<input type="button" id="Triangle" value="Triangle" onclick="CalculateAreaTriangle();drawTriangle();">
+		<input type="button" id="Circle" value="Circle" onclick="CalculateAreaCirc();drawCircle();">
+		<input type="button" id="Rectangle" value="Rectangle" onclick="CalculateAreaRect();drawRectangle();">
+		<input type="button" id="Square" value="Square" onclick="CalculateAreaSqr();drawSquare();">
+		<input type="button" id="Hexagon" value="Hexagon" onclick="CalculateAreaHex();drawHexagon();">
+<form id="circleform" name=form1 align="right" style="display: none;">
+        Enter the radius of circle:
+       <input type="text" name="txtRadius" size=10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaCirc();'> 
+       <div id="areamsg"></div>
+       <div id="circumferencemsg"> </div>
+    </form>
+    <form id="triangleform" name=form2 align="right" style="display: none;">
+        Enter the three sides of the triangle :
+       <input type="text" name="side1" size= 10>
+       <input type="text" name="side2" size= 10>
+       <input type="text" name="side3" size= 10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaTriangle();'> 
+       <div id="trimsg"></div>
+       <div id="perimetermsg"> </div>
+    </form>
+    <form id="rectangleform" name=form3 align="right" style="display: none;">
+        Enter the length,breadth of the rectangle : 
+       <input type="text" name="rectlen" size=10>
+       <input type="text" name="rectbrd" size=10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaRect();'> 
+       <div id="rectareamsg"></div>
+       <div id="rectpermsg"> </div>
+    </form>
+    <form id="squareform" name=form4 align="right" style="display: none;">
+        Enter the side of the square : 
+       <input type="text" name="sqrside" size=10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaSqr();'> 
+       <div id="sqrareamsg"></div>
+       <div id="sqrperimetermsg"> </div>
+    </form>
+    <form id="hexform" name=form5 align="right" style="display: none;">
+        Enter the side of the hexagon: 
+       <input type="text" name="hexside" size=10>
+       <br>
+       <input class="calculatebutton" type="button" value="Calculate" onClick='CalculateAreaHex();'> 
+       <div id="hexareamsg"></div>
+       <div id="hexperimetermsg"> </div>
+    </form>
+
+    <canvas id="myCanvas"></canvas>
+</body>
+<footer>
+	<script type="text/javascript" src ="../js/main.js"></script>
+</footer>
+</html>
+
+
+
+
+

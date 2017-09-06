@@ -1,0 +1,44 @@
+#heading{
+text-align: center;
+color: blue;
+}
+
+#page {
+	background-color: white;
+}
+
+#lionracc {
+	float:center;
+}
+
+.arthead {
+	font-size:1.5em;
+	color: darkblue;
+}
+
+#sub {
+	font-size: 1.2em;
+	color:grey;
+}
+
+#router {
+	float:right;
+}
+
+#ads {
+	font-size: 1em;	
+	font-family:"calibri";
+	float:right;
+}
+
+strong {
+	padding-left: 63px;
+}
+
+#caption {
+	color:blue;
+}
+
+p {
+	max-width: 80%;
+}
