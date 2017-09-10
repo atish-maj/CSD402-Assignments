@@ -54,7 +54,7 @@ function drawHexagon () {
 function CalculateAreaHex(){
     document.getElementById("rectangleform").style.display="none";  
     document.getElementById("triangleform").style.display="none";
-    document.getElementById("circleform").style.display="none";
+-    document.getElementById("circleform").style.display="none";
     document.getElementById("squareform").style.display="none";
     document.getElementById("hexform").style.display="block";
        var hside =document.form5.hexside.value;

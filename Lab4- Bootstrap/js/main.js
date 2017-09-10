@@ -3,3 +3,10 @@ function shine(x) {
 	$("#"+x.id).addClass("active");
 }
 
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+
+function showvideo (){
+	$("video-container").style.display="block";
+}
